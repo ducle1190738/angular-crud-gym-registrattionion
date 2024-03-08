@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" *ngIf="!daDangNhap">
+  <h1>Đăng ký tập Gym</h1>
+  <span class="example-spacer"></span>
+  <button routerLink="/listdangky" mat-raised-button color="accent" style="margin-right: 15px;">
+    Xem yêu cầu
+  </button>
+  <button routerLink="/dangnhap" mat-raised-button>
+    Đăng xuất
+  </button>
+</mat-toolbar>
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
+
+<ng-toast></ng-toast>
+<ng-confirm></ng-confirm>

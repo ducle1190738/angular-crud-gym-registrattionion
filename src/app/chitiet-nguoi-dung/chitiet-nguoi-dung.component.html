@@ -1,0 +1,72 @@
+<mat-card *ngIf="thongTinNguoiDung" class="example-card text-center">
+    <mat-card-header class="justify-content-center">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{thongTinNguoiDung.ho}} {{thongTinNguoiDung.ten}}</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <div matLine>
+                    Số điện thoại :
+                    <button mat-button>{{thongTinNguoiDung.sdt}}</button>
+                </div>
+            </mat-list-item>
+
+            <mat-list-item>
+                <div matLine>
+                    Giới tính :
+                    <button mat-button>{{thongTinNguoiDung.gioitinh}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Chiều cao :
+                    <button mat-button>{{thongTinNguoiDung.chieucao}}m</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Cân nặng :
+                    <button mat-button>{{thongTinNguoiDung.cannang}}kg</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Gói tập luyện :
+                    <button mat-button>{{thongTinNguoiDung.goi}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    BMI :
+                    <button mat-button>{{thongTinNguoiDung.bmi}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Kết quả BMI :
+                    <button mat-button>{{thongTinNguoiDung.ketquabmi}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Yêu cầu huấn luyện viên :
+                    <button mat-button>{{thongTinNguoiDung.hlv}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Mục tiêu :
+                    <button mat-button><mat-chip-listbox>
+                            <ng-container *ngFor="let row of thongTinNguoiDung.quantam">
+                                <mat-chip-option selected>{{row}}</mat-chip-option>
+                            </ng-container>
+                        </mat-chip-listbox></button>
+
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

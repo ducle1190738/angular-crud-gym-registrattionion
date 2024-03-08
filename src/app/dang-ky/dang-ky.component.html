@@ -1,0 +1,130 @@
+<div class="logo text-center">
+    <img width="300" src="assets/gymlogo.png" alt="">
+</div>
+<div class="dangky-form m-3 p-4">
+    <form [formGroup]="dangkyForm">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Họ</mat-label>
+                    <input formControlName="ho" matInput placeholder="Nhập họ">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tên</mat-label>
+                    <input formControlName="ten" matInput placeholder="Nhập tên">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" matInput placeholder="Nhập Email">
+                    <mat-icon matSuffix>mail_outline</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Số điện thoại</mat-label>
+                    <input formControlName="sdt" matInput placeholder="Nhập số điện thoại">
+                    <mat-icon matSuffix>mobile_screen_share</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Cân nặng (kg)</mat-label>
+                    <input formControlName="cannang" type="number" matInput placeholder="Nhập cân nặng">
+                    <mat-icon matSuffix>line_weight</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Chiều cao (m)</mat-label>
+                    <input formControlName="chieucao" type="number" matInput placeholder="Nhập chiều cao">
+                    <mat-icon matSuffix><i class="fa fa-text-height" aria-hidden="true"></i></mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Chỉ số BMI của bạn là:</mat-label>
+                    <input readonly type="number" formControlName="bmi" matInput placeholder="Chỉ số BMI">
+                    <mat-icon matSuffix><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i></mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tình trạng cơ thể theo chỉ số BMI:</mat-label>
+                    <input readonly formControlName="ketquabmi" matInput placeholder="Kết quả BMI">
+                    <mat-icon matSuffix><i class="fa fa-check" aria-hidden="true"></i></mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-3">
+                <label id="example-radio-group-label">Bạn có muốn tập với huấn luyện viên?</label>
+                <mat-radio-group formControlName="hlv" aria-labelledby="example-radio-group-label"
+                    class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let hlv of ['Có', 'Không']" [value]="hlv">
+                        {{hlv}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6 mt-3">
+                <label id="example-radio-group-label">Giới tính</label>
+                <mat-radio-group formControlName="gioitinh" aria-labelledby="example-radio-group-label"
+                    class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let gioitinh of gioitinh" [value]="gioitinh">
+                        {{gioitinh}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6 mt-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Chọn gói thời gian tập luyện</mat-label>
+                    <mat-select formControlName="goi">
+                        <mat-option *ngFor="let goi of goi" [value]="goi">
+                            {{goi}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Điều bạn mong muốn khi đến với Gym là: </mat-label>
+                    <mat-select formControlName="quantam" multiple>
+                        <mat-option *ngFor="let quantam of quantamList" [value]="quantam">
+                            {{quantam}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-3">
+                <label id="example-radio-group-label">Bạn có tập Gym trước đó không?</label>
+                <mat-radio-group formControlName="oldgym" aria-labelledby="example-radio-group-label"
+                    class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let oldgym of ['Có', 'Không']"
+                        [value]="oldgym">
+                        {{oldgym}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Ngày bạn có thể đến phòng gym?</mat-label>
+                    <input formControlName="ngay" matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="text-align: center;">Vui lòng nhập đầy đủ thông tin để có thể gửi yêu cầu: <br><br><button
+                class="text-center" [disabled]="!dangkyForm.valid" *ngIf="!trueCapNhat" (click)="submit()"
+                mat-raised-button color="accent">Hoàn thành</button>
+            <button *ngIf="trueCapNhat" (click)="capnhat()" mat-raised-button color="accent" class="text-center">Cập
+                nhật</button>
+        </div>
+
+    </form>
+</div>

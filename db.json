@@ -1,0 +1,138 @@
+{
+  "dangky": [
+    {
+      "ten": "Đức",
+      "ho": "Lê Hoàng",
+      "email": "ducle1190738@gmail.com",
+      "sdt": "0343157340",
+      "cannang": 47,
+      "chieucao": 1.65,
+      "bmi": "17.26",
+      "ketquabmi": "Thiếu cân",
+      "gioitinh": "Nam",
+      "hlv": "Có",
+      "goi": "6 tháng",
+      "quantam": [
+        "Giảm mỡ",
+        "Tự tin",
+        "Sức bền"
+      ],
+      "oldgym": "Có",
+      "ngay": "2024-03-21T17:00:00.000Z",
+      "id": 2
+    },
+    {
+      "ten": "Dễ",
+      "ho": "Võ Ngọc",
+      "email": "de@gmail.com",
+      "sdt": "093157432",
+      "cannang": 55,
+      "chieucao": 1.63,
+      "bmi": "20.70",
+      "ketquabmi": "Bình thường",
+      "gioitinh": "Nữ",
+      "hlv": "Có",
+      "goi": "3 tháng",
+      "quantam": [
+        "Giảm mỡ",
+        "Tự tin",
+        "Sức bền"
+      ],
+      "oldgym": "Có",
+      "ngay": "2024-03-25T17:00:00.000Z",
+      "id": 3
+    },
+    {
+      "ten": "Vy",
+      "ho": "Nguyễn Hoài",
+      "email": "vy@gmail.com",
+      "sdt": "0478874524",
+      "cannang": 50,
+      "chieucao": 1.71,
+      "bmi": "17.10",
+      "ketquabmi": "Thiếu cân",
+      "gioitinh": "Nam",
+      "hlv": "Không",
+      "goi": "1 tháng",
+      "quantam": [
+        "Tăng cân",
+        "Giảm mỡ"
+      ],
+      "oldgym": "Có",
+      "ngay": "2024-03-20T17:00:00.000Z",
+      "id": 4
+    },
+    {
+      "ten": "Anh",
+      "ho": "Nguyễn Đức",
+      "email": "anh@gmail.com",
+      "sdt": "0331547856",
+      "cannang": 50,
+      "chieucao": 1.7,
+      "bmi": "17.30",
+      "ketquabmi": "Thiếu cân",
+      "gioitinh": "Nam",
+      "hlv": "Không",
+      "goi": "3 tháng",
+      "quantam": [
+        "Giảm mỡ",
+        "Tự tin",
+        "Sức bền"
+      ],
+      "oldgym": "Có",
+      "ngay": "2024-03-24T17:00:00.000Z",
+      "id": 5
+    },
+    {
+      "ten": "Huy",
+      "ho": "Võ Quốc",
+      "email": "ducle52.k42@st.ueh.edu.vn",
+      "sdt": "0521511515",
+      "cannang": 90,
+      "chieucao": 1.75,
+      "bmi": "29.39",
+      "ketquabmi": "Thừa cân",
+      "gioitinh": "Nữ",
+      "hlv": "Có",
+      "goi": "1 năm",
+      "quantam": [
+        "Giảm mỡ",
+        "Tự tin",
+        "Sức bền"
+      ],
+      "oldgym": "Có",
+      "ngay": "2024-03-29T17:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "nguoidung": [
+    {
+      "tendangky": "Lê Hoàng Đức",
+      "emaildangky": "ducle1190738@gmail.com",
+      "matkhaudangky": "1234",
+      "sdtdangky": 343157340,
+      "id": 1
+    },
+    {
+      "hoten": "Tôi là",
+      "email": "Huhu@gmail.com",
+      "matkhau": "udasgasgsd",
+      "sdt": 124648478,
+      "id": 2
+    },
+    {
+      "hoten": "",
+      "email": "",
+      "matkhau": "",
+      "sdt": "",
+      "id": 3
+    },
+    {
+      "hoten": "Lê Hoàng Đức",
+      "email": "hoangdinh1124@gmail.com",
+      "matkhau": "12345",
+      "sdt": 343157340,
+      "id": 4
+    }
+  ]
+}
